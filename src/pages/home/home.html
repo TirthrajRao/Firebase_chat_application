@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Chatting Application
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<form (submit)="loginUser(credentials)">
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input name="email" type="email" required [(ngModel)]="credentials.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input name="password" type="password" required [(ngModel)]="credentials.passsword"></ion-input>
+  </ion-item>
+	<button type="submit" ion-button block outline >Login</button>
+</form>
+</ion-content>
